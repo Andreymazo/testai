@@ -1,0 +1,523 @@
+2025-06-12 11:40:09 [INFO] Question: Which are the top 5 vacancies?
+2025-06-12 11:40:09 [INFO] Running PandasAI with local LLM...
+2025-06-12 11:40:09 [INFO] Prompt ID: 0f29aff3-1e4c-4843-9dae-a10c29eb0df8
+2025-06-12 11:40:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 11:40:09 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 11:40:09 [INFO] Executing Step 1: CacheLookup
+2025-06-12 11:40:09 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 11:40:09 [INFO] Using prompt: <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+872,App Development,Fiverr,Expert,Australia,Crypto,189,9885,14.63,85.61,3.19,58,Fixed,36.6,422
+1862,Data Entry,PeoplePerHour,Beginner,Canada,Bank Transfer,287,4980,49.1,59.06,3.86,73,Fixed,59.12,491
+524,Customer Support,Toptal,Intermediate,Asia,PayPal,99,4077,55.06,97.42,4.86,6,Hourly,40.3,77
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 vacancies?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 11:40:09 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 11:40:09 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-12 11:40:09 [ERROR] Pipeline failed on step 3: Error code: 404 - {'error': {'message': 'model "mistral" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2025-06-12 11:40:40 [INFO] Question: Which are the top 5 vacancies?
+2025-06-12 11:40:40 [INFO] Running PandasAI with local LLM...
+2025-06-12 11:40:40 [INFO] Prompt ID: e19e76df-e8b9-45ee-9940-e965bfa678bb
+2025-06-12 11:40:40 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 11:40:40 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 11:40:40 [INFO] Executing Step 1: CacheLookup
+2025-06-12 11:40:40 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 11:40:40 [INFO] Using prompt: <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+1078,Web Development,Freelancer,Expert,UK,Bank Transfer,22,952,76.35,75.99,4.83,46,Fixed,25.87,334
+1507,SEO,Upwork,Beginner,Asia,Mobile Banking,212,353,59.9,82.52,3.0,31,Hourly,75.28,93
+243,Content Writing,PeoplePerHour,Intermediate,Australia,Crypto,295,559,68.13,69.25,3.88,71,Hourly,79.68,122
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 vacancies?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 11:40:40 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 11:40:40 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-12 11:40:40 [ERROR] Pipeline failed on step 3: Error code: 404 - {'error': {'message': 'model "mistral" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2025-06-12 12:01:47 [INFO] Question: Which are the top 5 vacancies?
+2025-06-12 12:01:47 [INFO] Running PandasAI with local LLM...
+2025-06-12 12:01:47 [INFO] Prompt ID: 29088e43-9f08-4fe3-9f10-440dc0631419
+2025-06-12 12:01:47 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 12:01:47 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 12:01:47 [INFO] Executing Step 1: CacheLookup
+2025-06-12 12:01:47 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 12:01:48 [INFO] Using prompt: <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+449,SEO,Toptal,Beginner,Middle East,Mobile Banking,91,5284,93.01,50.16,4.67,14,Hourly,68.4,24
+621,Content Writing,Freelancer,Expert,Australia,PayPal,107,122,77.2,54.01,4.04,9,Fixed,42.74,367
+310,Digital Marketing,Fiverr,Intermediate,UK,Bank Transfer,13,2156,11.26,84.47,4.11,23,Fixed,22.68,273
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 vacancies?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 12:01:48 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 12:03:39 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 12:03:39 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+449,SEO,Toptal,Beginner,Middle East,Mobile Banking,91,5284,93.01,50.16,4.67,14,Hourly,68.4,24
+621,Content Writing,Freelancer,Expert,Australia,PayPal,107,122,77.2,54.01,4.04,9,Fixed,42.74,367
+310,Digital Marketing,Fiverr,Intermediate,UK,Bank Transfer,13,2156,11.26,84.47,4.11,23,Fixed,22.68,273
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 vacancies?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 12:03:39 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Assuming dfs is a list of DataFrames, let's assume it has only one DataFrame for simplicity.
+dfs = [pd.DataFrame(dfs[0])]
+
+# Combine all DataFrames if there are multiple (for the case when `dfs` contains more than one DataFrame)
+df = pd.concat(dfs, ignore_index=True)
+
+# Sort the DataFrame by Earnings_USD in descending order and select the top 5 rows
+top_5_vacancies = df.sort_values(by='Earnings_USD', ascending=False).head(5)
+
+# Plotting a bar chart of the top 5 vacancies
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(figsize=(10, 6))
+top_5_vacancies['Job_Category'].value_counts().plot(kind='bar', ax=ax)
+ax.set_title('Top 5 Vacancies by Earnings')
+ax.set_xlabel('Job Category')
+ax.set_ylabel('Earnings (USD)')
+
+# Save the plot as a PNG file
+plt.savefig('top_vacancies.png')
+
+# Declare result variable as a dictionary with type and value
+result = {
+    "type": "dataframe",
+    "value": top_5_vacancies,
+    "plot": "top_vacancies.png"
+}
+
+print(result)
+            ```
+            
+2025-06-12 12:03:39 [INFO] Executing Step 4: CachePopulation
+2025-06-12 12:03:39 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 12:03:39 [INFO] Saving charts to /home/andreymazo/Projects/testai/app/exports/charts/temp_chart.png
+2025-06-12 12:03:39 [INFO] 
+Code running:
+```
+df = pd.concat(dfs, ignore_index=True)
+top_5_vacancies = df.sort_values(by='Earnings_USD', ascending=False).head(5)
+fig, ax = plt.subplots(figsize=(10, 6))
+top_5_vacancies['Job_Category'].value_counts().plot(kind='bar', ax=ax)
+ax.set_title('Top 5 Vacancies by Earnings')
+ax.set_xlabel('Job Category')
+ax.set_ylabel('Earnings (USD)')
+plt.savefig('/home/andreymazo/Projects/testai/app/exports/charts/temp_chart.png')
+result = {'type': 'dataframe', 'value': top_5_vacancies, 'plot': '/home/andreymazo/Projects/testai/app/exports/charts/temp_chart.png'}
+print(result)
+        ```
+2025-06-12 12:03:39 [INFO] Executing Step 6: CodeExecution
+2025-06-12 12:03:39 [INFO] Executing Step 7: ResultValidation
+2025-06-12 12:03:39 [INFO] Answer: {'type': 'dataframe', 'value':       Freelancer_ID     Job_Category       Platform Experience_Level Client_Region  ... Client_Rating  Job_Duration_Days  Project_Type  Rehire_Rate  Marketing_Spend
+597             598  Web Development  PeoplePerHour     Intermediate        Canada  ...          3.82                 57        Hourly        19.32               16
+879             880  Web Development         Fiverr     Intermediate            UK  ...          3.06                 84        Hourly        26.35               65
+1399           1400       Data Entry  PeoplePerHour         Beginner   Middle East  ...          3.48                 10        Hourly        11.90              371
+636             637  Content Writing         Fiverr           Expert          Asia  ...          3.14                 23         Fixed        39.85              390
+267             268       Data Entry  PeoplePerHour         Beginner          Asia  ...          3.56                 57        Hourly        16.65               38
+
+[5 rows x 15 columns], 'plot': '/home/andreymazo/Projects/testai/app/exports/charts/temp_chart.png'}
+2025-06-12 12:03:39 [INFO] Executing Step 8: ResultParsing
+2025-06-12 12:04:38 [INFO] Question: Какие самые высокооплачиваемые 5 вакансий?
+2025-06-12 12:04:38 [INFO] Running PandasAI with local LLM...
+2025-06-12 12:04:38 [INFO] Prompt ID: 819db51b-31ee-4e67-886e-0c631cb8ff39
+2025-06-12 12:04:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 12:04:38 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 12:04:38 [INFO] Executing Step 1: CacheLookup
+2025-06-12 12:04:38 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 12:04:38 [INFO] Using prompt: <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+1272,Web Development,Fiverr,Beginner,UK,Crypto,71,9032,11.41,74.76,3.06,88,Fixed,13.39,84
+804,Customer Support,PeoplePerHour,Expert,Middle East,Mobile Banking,115,2172,50.31,62.03,4.37,40,Hourly,51.79,88
+148,Data Entry,Freelancer,Intermediate,Canada,PayPal,244,9963,71.64,98.46,4.05,43,Hourly,62.17,454
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Какие самые высокооплачиваемые 5 вакансий?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 12:04:38 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 12:06:41 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 12:06:41 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+1272,Web Development,Fiverr,Beginner,UK,Crypto,71,9032,11.41,74.76,3.06,88,Fixed,13.39,84
+804,Customer Support,PeoplePerHour,Expert,Middle East,Mobile Banking,115,2172,50.31,62.03,4.37,40,Hourly,51.79,88
+148,Data Entry,Freelancer,Intermediate,Canada,PayPal,244,9963,71.64,98.46,4.05,43,Hourly,62.17,454
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Какие самые высокооплачиваемые 5 вакансий?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 12:06:41 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Assume dfs is already defined with your dataframes
+dfs = [your_dataframes_here]
+
+def find_top_paid_jobs(dfs):
+    # Initialize a dictionary to hold job categories and their average earnings
+    job_categories_earnings = {}
+
+    for df in dfs:
+        # Filter unique job categories from the dataframe
+        unique_jobs = df['Job_Category'].unique()
+        
+        for job_category in unique_jobs:
+            # Extract jobs within this category
+            cat_df = df[df['Job_Category'] == job_category]
+            
+            # Calculate average earnings for this category
+            avg_earnings = cat_df['Earnings_USD'].mean()
+            
+            # Store the average earnings in our dictionary
+            job_categories_earnings[job_category] = avg_earnings
+
+    # Convert dictionary to a pandas DataFrame for sorting
+    earnings_df = pd.DataFrame.from_dict(job_categories_earnings, orient='index', columns=['Average Earnings'])
+    
+    # Sort the dataframe by average earnings in descending order and take the top 5
+    top_paid_jobs = earnings_df.sort_values(by='Average Earnings', ascending=False).head(5)
+    
+    # Declare result variable as a dictionary with type and value
+    result = {
+        "type": "dataframe",
+        "value": top_paid_jobs
+    }
+    
+    return result
+
+# Run the function on your dfs list
+result = find_top_paid_jobs(dfs)
+
+print(result["value"])
+            ```
+            
+2025-06-12 12:06:41 [INFO] Executing Step 4: CachePopulation
+2025-06-12 12:06:41 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 12:06:41 [INFO] 
+Code running:
+```
+def find_top_paid_jobs(dfs):
+    job_categories_earnings = {}
+    for df in dfs:
+        unique_jobs = df['Job_Category'].unique()
+        for job_category in unique_jobs:
+            cat_df = df[df['Job_Category'] == job_category]
+            avg_earnings = cat_df['Earnings_USD'].mean()
+            job_categories_earnings[job_category] = avg_earnings
+    earnings_df = pd.DataFrame.from_dict(job_categories_earnings, orient='index', columns=['Average Earnings'])
+    top_paid_jobs = earnings_df.sort_values(by='Average Earnings', ascending=False).head(5)
+    result = {'type': 'dataframe', 'value': top_paid_jobs}
+    return result
+
+
+result = find_top_paid_jobs(dfs)
+print(result['value'])
+        ```
+2025-06-12 12:06:41 [INFO] Executing Step 6: CodeExecution
+2025-06-12 12:06:41 [INFO] Executing Step 7: ResultValidation
+2025-06-12 12:06:41 [INFO] Answer: {'type': 'dataframe', 'value':                    Average Earnings
+App Development         5201.447581
+Graphic Design          5136.871698
+Customer Support        5135.536885
+Digital Marketing       5094.264069
+Data Entry              5081.067227}
+2025-06-12 12:06:41 [INFO] Executing Step 8: ResultParsing
+2025-06-12 13:09:29 [INFO] Question: Какие самые высокоплачиваемые три профессии
+2025-06-12 13:09:29 [INFO] Running PandasAI with local LLM...
+2025-06-12 13:09:29 [INFO] Prompt ID: ff12763f-5ea3-4c0c-9cc3-68c93201b1c5
+2025-06-12 13:09:29 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 13:09:29 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 13:09:29 [INFO] Executing Step 1: CacheLookup
+2025-06-12 13:09:29 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 13:09:29 [INFO] Using prompt: <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+1360,Web Development,PeoplePerHour,Intermediate,Australia,Bank Transfer,139,4247,79.35,85.66,3.19,41,Fixed,38.68,341
+419,Digital Marketing,Upwork,Beginner,USA,Mobile Banking,266,294,12.28,88.11,4.85,44,Fixed,69.23,65
+646,Graphic Design,Freelancer,Expert,Canada,PayPal,290,927,39.52,73.28,4.01,29,Hourly,35.78,491
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Какие самые высокоплачиваемые три профессии
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 13:09:29 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 13:11:17 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 13:11:17 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:1950x15
+Freelancer_ID,Job_Category,Platform,Experience_Level,Client_Region,Payment_Method,Job_Completed,Earnings_USD,Hourly_Rate,Job_Success_Rate,Client_Rating,Job_Duration_Days,Project_Type,Rehire_Rate,Marketing_Spend
+1360,Web Development,PeoplePerHour,Intermediate,Australia,Bank Transfer,139,4247,79.35,85.66,3.19,41,Fixed,38.68,341
+419,Digital Marketing,Upwork,Beginner,USA,Mobile Banking,266,294,12.28,88.11,4.85,44,Fixed,69.23,65
+646,Graphic Design,Freelancer,Expert,Canada,PayPal,290,927,39.52,73.28,4.01,29,Hourly,35.78,491
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Какие самые высокоплачиваемые три профессии
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 13:11:17 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Assuming dfs is a list containing one dataframe (as your example only provides one DataFrame)
+df = dfs[0]
+
+# Calculate average hourly rate for each job category
+average_hourly_rate = df.groupby('Job_Category')['Hourly_Rate'].mean().reset_index()
+
+# Sort the average hourly rates in descending order
+sorted_average_rates = average_hourly_rate.sort_values(by='Hourly_Rate', ascending=False)
+
+# Get the top 3 highest paying jobs
+top_three_paid_jobs = sorted_average_rates.head(3)
+
+result = {
+    "type": "dataframe",
+    "value": top_three_paid_jobs
+}
+
+print(result)
+            ```
+            
+2025-06-12 13:11:17 [INFO] Executing Step 4: CachePopulation
+2025-06-12 13:11:17 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 13:11:17 [INFO] 
+Code running:
+```
+df = dfs[0]
+average_hourly_rate = df.groupby('Job_Category')['Hourly_Rate'].mean().reset_index()
+sorted_average_rates = average_hourly_rate.sort_values(by='Hourly_Rate', ascending=False)
+top_three_paid_jobs = sorted_average_rates.head(3)
+result = {'type': 'dataframe', 'value': top_three_paid_jobs}
+print(result)
+        ```
+2025-06-12 13:11:17 [INFO] Executing Step 6: CodeExecution
+2025-06-12 13:11:17 [INFO] Executing Step 7: ResultValidation
+2025-06-12 13:11:17 [INFO] Answer: {'type': 'dataframe', 'value':        Job_Category  Hourly_Rate
+1   Content Writing    54.682987
+6               SEO    54.312278
+2  Customer Support    54.143770}
+2025-06-12 13:11:17 [INFO] Executing Step 8: ResultParsing
