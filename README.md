@@ -16,7 +16,8 @@
 Скрин как работает
 
 
-![](media/Screenshot from 2025-06-12 13-11-39.png)  
+![Screenshot from 2025-06-12 13-11-39](https://github.com/user-attachments/assets/54b771f8-81de-46e8-ba9b-58d0f5cd16f1)
+
 
 
 
