@@ -7,9 +7,23 @@ from io import BytesIO
 from fastapi.responses import RedirectResponse
 import pandas as pd
 import json
-from fastapi import FastAPI, File, Form, HTTPException, Request, Response, UploadFile
- 
+from fastapi import FastAPI, File, Form, HTTPException, Request, Response, UploadFile, status
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+
+import os
+
+load_dotenv()
+ollama_host = os.getenv('OLLAMA_HOST')
+print(f"OLLAMA_HOST:, {ollama_host}")
+
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,  
+    allow_origins=["*"],  # Можно заменить «\*» на конкретный источник
+    allow_credentials=True,  
+    allow_methods=["POST"]  # Разрешить только POST, можно указать список методов или использовать «\*» для всех методов  
+)  
 templates = Jinja2Templates(directory='templates')
 
 @app.post('/upload')
@@ -35,18 +49,23 @@ def upload(file: UploadFile = File(...)):
 
 @app.get('/')
 def index(request: Request):
-    url = "http://127.0.0.1:8000/generate"
-    return templates.TemplateResponse('index2.html', {'request': request}, headers={"Location": "http://127.0.0.1:8000/generate"})
+    
+    # return templates.TemplateResponse('index.html', {'request': request})
+    context = {'request': request, 'model': 'model'}
+    return templates.TemplateResponse('index.html', context)
+
+    # url = "http://127.0.0.1:8000/generate"
+    # return templates.TemplateResponse('index2.html', {'request': request}, headers={"Location": "http://127.0.0.1:8000/generate"})
     # return templates.TemplateResponse('index2.html', {'request': request, 'url': url}, headers={'Location': url}, status_code=301)  
 
     # return RedirectResponse(url="/generate", status_code=status.HTTP_303_SEE_OTHER)  
 
-@app.get('/generate')
-def get_result(request: Request, model: str = Form(...)): 
-    # return templates.TemplateResponse('index.html', {'request': request})
-    context = {'request': request, 'model': model}
-    return templates.TemplateResponse('index.html', context)
+@app.post('/generate')
+def get_result(request: Request, model: str = Form(...)):
 
+    redirect_url = request.url_for("index")  # Перенаправление на домашнюю страницу 
+    return RedirectResponse(url=redirect_url, status_code=status.HTTP_303_SEE_OTHER)
+   
 
 # @app.post("/generate")
 # async def generate_text():#query: Query

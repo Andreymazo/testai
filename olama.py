@@ -28,7 +28,7 @@ class OlamaRun:
 if __name__ == '__main__':
     subprocess.call(['sh', './olama.sh'])
     msg = """Here will write description of app  cmds:
-        python OlamaRun.py -path_to_file media/freelancer_earnings_bd.csv -question Какие самые высокоплачиваемые три профессии ask_question; """
+        python OlamaRun.py -path_to_file media/freelancer_earnings_bd.csv -question "Какие самые высокоплачиваемые три профессии" ask_question; """
     
     parser = argparse.ArgumentParser(description = msg)    
    

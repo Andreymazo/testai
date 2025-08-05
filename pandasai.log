@@ -521,3 +521,34 @@ print(result)
 6               SEO    54.312278
 2  Customer Support    54.143770}
 2025-06-12 13:11:17 [INFO] Executing Step 8: ResultParsing
+2025-08-05 22:23:08 [INFO] Question: Какие самые высокоплачиваемые три профессии
+2025-08-05 22:23:08 [INFO] Running PandasAI with local LLM...
+2025-08-05 22:23:08 [INFO] Prompt ID: 76a50d0a-7c70-4a62-b0f1-1d14c6b73c14
+2025-08-05 22:23:08 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-08-05 22:23:08 [INFO] Executing Step 0: ValidatePipelineInput
+2025-08-05 22:23:08 [INFO] Executing Step 1: CacheLookup
+2025-08-05 22:23:08 [INFO] Using cached response
+2025-08-05 22:23:08 [INFO] Executing Step 2: PromptGeneration
+2025-08-05 22:23:08 [INFO] Executing Step 2: Skipping...
+2025-08-05 22:23:08 [INFO] Executing Step 3: CodeGenerator
+2025-08-05 22:23:08 [INFO] Executing Step 3: Skipping...
+2025-08-05 22:23:08 [INFO] Executing Step 4: CachePopulation
+2025-08-05 22:23:08 [INFO] Executing Step 4: Skipping...
+2025-08-05 22:23:08 [INFO] Executing Step 5: CodeCleaning
+2025-08-05 22:23:08 [INFO] 
+Code running:
+```
+df = dfs[0]
+average_hourly_rate = df.groupby('Job_Category')['Hourly_Rate'].mean().reset_index()
+sorted_average_rates = average_hourly_rate.sort_values(by='Hourly_Rate', ascending=False)
+top_three_paid_jobs = sorted_average_rates.head(3)
+result = {'type': 'dataframe', 'value': top_three_paid_jobs}
+print(result)
+        ```
+2025-08-05 22:23:08 [INFO] Executing Step 6: CodeExecution
+2025-08-05 22:23:08 [INFO] Executing Step 7: ResultValidation
+2025-08-05 22:23:08 [INFO] Answer: {'type': 'dataframe', 'value':        Job_Category  Hourly_Rate
+1   Content Writing    54.682987
+6               SEO    54.312278
+2  Customer Support    54.143770}
+2025-08-05 22:23:08 [INFO] Executing Step 8: ResultParsing
